@@ -129,7 +129,7 @@ The service layer must be able to update the workflow status fields you added to
 		guestbook.setStatusByUserName(user.getFullName());
 		guestbook.setStatusDate(new Date());
 
-		entryPersistence.update(entry);
+		guestbookPersistence.update(guestbook);
 
 		if (status == WorkflowConstants.STATUS_APPROVED) {
 
